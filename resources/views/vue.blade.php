@@ -30,9 +30,9 @@
     @endif
 
 
-    <div class="container">
-        <div id="app"></div>
-    </div>
+
+    <div id="app"></div>
+
 
     @vite(['resources/js/vue/main.js'])
 

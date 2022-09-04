@@ -56,7 +56,7 @@ class UserController extends Controller
     public function logout()
     {
         [$id, $token] = explode('|', request('token'));
-        if (AUth::user())
+        if (Auth::user())
             Auth::user()->tokens()->where('id', $id)->delete();
         else
             PersonalAccessToken::where('id', $id)->delete();
